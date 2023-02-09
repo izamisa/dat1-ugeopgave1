@@ -1,0 +1,7 @@
+name = 'Isabella'
+age = 21
+print = name
+print = age
+
+print("Hi my name is Isabella")
+print("My age is 21")
