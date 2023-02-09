@@ -1,0 +1,61 @@
+void setup() {
+  methodOne(); 
+  
+    String str1 = "hi";
+    { // + scope
+        String str2 = "hi";
+        System.out.println(str2); // this works because str2 is in the same scope as the print call.
+        { // + scope
+            System.out.println(str2); // this works because this can still access str2 here
+            System.out.println(str1); // this can access str1 here
+        } // - scope
+    } // - scope
+    System.out.println(str1); // this works because str1 is in the same or lower scope than the print call, it can access str1
+    System.out.println(str2); // this does not work because str2 is in a scope that can not be accessed here
+  methodTwo(); 
+}
+
+/*
+  The following method has an error in it. Fix the error and run it. 
+*/
+
+void methodOne()
+{
+  int i = 1000; // You are not allowed to change this line. 
+  
+  int max = 10;
+  
+  if (i > max)
+  {
+    String output = "i is greater than "+max+".";   
+  }
+  
+  println(output);
+   
+}
+
+/* 
+  Finish the following method so that we can change the number assigned 
+  to the weekday and it prints the correct output.  
+*/
+void methodTwo() 
+{
+  int weekDay = 0; // 0 = Monday, 6 = Sunday. 
+  boolean weekend = false;
+  
+  if (weekDay < 5)
+  {
+    weekend = false;
+  }
+  else 
+  {
+    weekend = true;
+  }
+  
+  // Print the name of the weekday here: 
+  
+    
+    
+  // Print if it is weekend here:
+  
+}
