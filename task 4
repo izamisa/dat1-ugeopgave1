@@ -1,0 +1,9 @@
+for i in range(0, 20):
+  # i will increase by 1 every time this codeblock is ran
+
+  
+ start = int(input("2"))
+end = int(input("20"))
+
+def is_even(num):
+  return num % 2 == 0
