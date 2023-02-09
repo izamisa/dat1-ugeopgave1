@@ -1,8 +1,0 @@
-a = 435
-b = 24345
-
-if a + b == 10 or b ==10:
-    print("Success!")
-else:
-    print("Failure")
-
